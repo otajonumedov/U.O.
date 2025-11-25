@@ -1,0 +1,118 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  background: #fff;
+  padding: 32px;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 15px 45px rgba(15, 23, 42, 0.08);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 6px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: #0f172a;
+}
+
+.subtitle {
+  margin: 12px 0 0;
+  color: #475569;
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.editor-block,
+.preview-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.05);
+}
+
+.block-title {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+textarea {
+  min-height: 480px;
+  border-radius: 12px;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  background: #f8fafc;
+  padding: 16px;
+  font-size: 1rem;
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  resize: vertical;
+  line-height: 1.6;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.preview {
+  min-height: 480px;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: #fdfdff;
+  padding: 16px;
+  overflow-y: auto;
+  line-height: 1.7;
+  color: #111827;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+button {
+  background: #0ea5e9;
+  border: none;
+  color: #fff;
+  padding: 12px 22px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0 12px 20px rgba(14, 165, 233, 0.35);
+}
+
+button:active {
+  transform: translateY(1px);
+}
